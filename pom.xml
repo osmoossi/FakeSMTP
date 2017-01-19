@@ -73,13 +73,12 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-
+			
 			<!-- Create an executable jar with dependencies -->
-			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>3.0.0</version>
+				<version>2.5.4</version>
 				<configuration>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -87,7 +86,7 @@
 					<archive>
 						<manifestFile>${project.basedir}/src/main/resources/META-INF/MANIFEST.MF</manifestFile>
 					</archive>
-					&lt;!&ndash; Remove the "-jar-with-dependencies" at the end of the file &ndash;&gt;
+					<!-- Remove the "-jar-with-dependencies" at the end of the file -->
 					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 				<executions>
@@ -99,7 +98,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
 		</plugins>
 	</build>
 

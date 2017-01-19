@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration>
 
-	<property name="LOG_DIR" value="/logs/cbs-fakesmtp-container/"/>
+	<property name="LOG_DIR" value="/logs/"/>
 	<property name="APPLICATION_NAME" value="fake-smtp" />
 
 	<appender name="all-appender-standard" class="ch.qos.logback.core.rolling.RollingFileAppender">
