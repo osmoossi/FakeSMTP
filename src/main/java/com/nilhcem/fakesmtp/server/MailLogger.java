@@ -44,7 +44,6 @@ final class MailLogger extends Observable {
         LOGGER.info("------ EMAIL RECEIVED ------");
         LOGGER.info("To: " + mail.getTo());
         LOGGER.info("From: " + mail.getFrom());
-        LOGGER.info("Timestamp: " + dateFormat.format(mail.getReceivedDate()));
         LOGGER.info("Subject: " + mail.getSubject());
         LOGGER.info("Content: " + mail.getEmailStr());
     }
