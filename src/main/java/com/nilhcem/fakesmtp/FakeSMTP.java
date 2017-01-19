@@ -23,7 +23,9 @@ public final class FakeSMTP {
 	}
 	
 	public static void main(final String[] args) {
-		try {
+		
+		LOGGER.info("Starting up");
+        try {
 			ArgsHandler.INSTANCE.handleArgs(args);
 		} catch (ParseException e) {
 			ArgsHandler.INSTANCE.displayUsage();
