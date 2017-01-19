@@ -33,7 +33,7 @@ public final class FakeSMTP {
 		}
 
 		try {
-			SMTPServerHandler.INSTANCE.startServer(getPort(), InetAddress.getLocalHost());
+			SMTPServerHandler.INSTANCE.startServer(getPort(), InetAddress.getByName("localhost"));
 		} catch (NumberFormatException e) {
 			LOGGER.error("Error: Invalid port number", e);
 		} catch (Exception e) {
