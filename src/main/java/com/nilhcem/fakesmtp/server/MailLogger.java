@@ -45,7 +45,7 @@ final class MailLogger extends Observable {
         LOGGER.info("To: " + mail.getTo());
         LOGGER.info("From: " + mail.getFrom());
         LOGGER.info("Subject: " + mail.getSubject());
-        LOGGER.info("Content: " + mail.getEmailStr());
+        LOGGER.info("Content:\n" + mail.getEmailStr());
     }
     
 	private String convertStreamToString(InputStream is) {
