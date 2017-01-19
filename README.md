@@ -3,8 +3,6 @@ FakeSMTP
 
 FakeSMTP is a Free Fake SMTP Server written in Java. It is a stripped down version of [Nilhcem/FakeSMTP](https://github.com/Nilhcem/FakeSMTP). It will log all emails to one log file.
 
-<img src="http://nilhcem.github.com/FakeSMTP/images/screenshot_mac.png" width="664" height="463" />
-
 FakeSMTP uses SubEthaSMTP: an easy-to-use server-side SMTP library for Java.
 
 FakeSMTP is free to use for commercial and non-commercial projects and the
