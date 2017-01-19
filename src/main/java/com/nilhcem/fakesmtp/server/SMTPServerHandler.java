@@ -19,8 +19,8 @@ public enum SMTPServerHandler {
 	INSTANCE;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SMTPServerHandler.class);
-	private final MailSaver mailSaver = new MailSaver();
-	private final MailListener myListener = new MailListener(mailSaver);
+	private final MailLogger mailLogger = new MailLogger();
+	private final MailListener myListener = new MailListener(mailLogger);
 	private final SMTPServer smtpServer = new SMTPServer(new SimpleMessageListenerAdapter(myListener), new SMTPAuthHandlerFactory());
 
 	SMTPServerHandler() {
@@ -73,8 +73,8 @@ public enum SMTPServerHandler {
 	 *
 	 * @return the {@code MailSaver} object.
 	 */
-	public MailSaver getMailSaver() {
-		return mailSaver;
+	public MailLogger getMailLogger() {
+		return mailLogger;
 	}
 
 	/**
